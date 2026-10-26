@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>나의 할 일</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>나의 할 일</h1>
+    <p id="count" class="count"></p>
+
+    <form id="add-form" class="add-form">
+      <input id="new-todo" type="text" placeholder="할 일을 입력하세요" maxlength="100" autocomplete="off">
+      <button type="submit">추가</button>
+    </form>
+
+    <ul id="todo-list" class="todo-list"></ul>
+    <p id="empty" class="empty">아직 할 일이 없어요.</p>
+
+    <button type="button" id="clear-done" class="clear-done">완료한 일 지우기</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
